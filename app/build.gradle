@@ -47,5 +47,5 @@ android {
 
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
-    implementation files('libs/HeWeather_Public_Android_V3.3.jar')
+
 }
