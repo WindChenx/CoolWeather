@@ -68,7 +68,7 @@ public class AutoUpdateService extends Service {
                     final Weather weather = Utility.handleWeatherResponse(responseText);
                     Log.d("Tag", responseText);
 
-                    if (weather != null && "ok".equals(weather.statue)) {
+                    if (weather != null && "ok".equals(weather.status)) {
                         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(AutoUpdateService.this).edit();
                         editor.putString("weather", responseText);
                         editor.apply();
